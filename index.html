@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoalGreen</title>
+
+
+    <style>
+        #background-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #model-container1 {
+            display: flex;
+            z-index: 10;
+            position: relative;
+        }
+
+        #model-container2 {
+            display: flex;
+            z-index: 10;
+            position: relative;
+        }
+    </style>
+    <script type="importmap"></script>
+  <script type="module" crossorigin src="./assets/index-DG4qhVn2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-NxWXdbTr.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+
+    <header class="header">
+            <a class="logo">GoalGreen</a>
+        <nav class="navbar">
+            <a href="index.html" id="home">Home</a>
+            <a href="page2.html" id="minigames">Minigames</a>
+            <a href="page3.html" id="aboutUs">About us</a>
+        </nav>
+
+        <div class="language-dropdown">
+            <button class="langbutton" onclick="toggleDropdown()">
+                <img src="./assets/lang-uyIGl6DM.png" alt="Change Language" style="width:50px; height:auto;">
+            </button>
+            <div id="language-menu" class="language-menu">
+                <a href="#" onclick="setLanguage('en')">English</a>
+                <a href="#" onclick="setLanguage('th')">ไทย</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="centered-container">
+        <p id="welcome-message">Welcome!</p>
+    </div>
+
+    <div class="arrow-container">
+        <div class="arrow-down"></div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div id="gradient-overlay"></div>
+
+    <div id="block"></div>
+
+    <div id="background-filter"></div>
+
+    <div class="info-section">
+        <div class="info1">
+            <div class="flex-container">
+                <div id="model-container1" class="model-container1">
+                </div>
+                <div class="new-content">
+                    <h2 id="text1" style="color: white; font-size: 30px;">Waste Separation</h2>
+                    <br>
+                    <p id="text2" style="font-size: 18px;">Waste separation is the process of grouping and categorizing waste into different categories based on
+                        its characteristics or type, with the goal of improving waste management and recycling efficiency.</p>
+                    <br>
+                    <h3 id="text3" style="color: white; font-size: 20px;">Types of Waste Separation:</h3>
+                    <br>
+                    <h4 id="text4" style="color: green; font-size: 18px;">1. Organic Waste</h4>
+                    <p id="text5" class="tab-text">Waste that can naturally decompose, such as food scraps and leaves.</p>
+                    <h4 id="text6" style="color: rgb(170, 170, 0); font-size: 18px;">2. Recyclable Waste</h4>
+                    <p id="text7" class="tab-text">Materials that can be reused, such as paper, glass, metal, and plastic.</p>
+                    <h4 id="text8" style="color: rgb(170, 0, 0); font-size: 18px;">3. Hazardous Waste</h4>
+                    <p id="text9" class="tab-text">Toxic or harmful waste, like batteries, light bulbs, and batteries.</p>
+                    <h4 id="text10"  style="color: rgb(0, 0, 170); font-size: 18px;">4. General Waste</h4>
+                    <p id="text11" class="tab-text">Waste that cannot be recycled or decomposed, such as certain types of plastics, packaging, or disposable waste.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info2">
+            <div class="flex-container">
+                <div class="newer-content">
+                    <h2 id="text12" style="color: white; font-size: 30px;">Recycling</h2>
+                    <br> 
+                    <p id="text13" style="font-size: 18px;">The process of taking waste or used materials and putting them through reprocessing or quality improvement so that the waste regains a quality equal to or near its original state, or turns into new raw materials or new products.</p>
+                    <br>
+                    <h3 id="text14" style="font-size: 20px;">The process involves 4 steps:</h3>
+                    <br>
+                    <p id="text15" class="tab-text">1. Collection</p>
+                    <p id="text16" class="tab-text">2. Sorting of different types of materials</p>
+                    <p id="text17" class="tab-text">3. Production or improvement</p>
+                    <p id="text18" class="tab-text">4. Utilizing the materials in the production or improvement process, where different types of materials have different methods of production.</p>
+                </div>
+                <div id="model-container2" class="model-container2">
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <script src="dropdown.js"></script>
+</body>
+</html>
