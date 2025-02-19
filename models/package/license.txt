@@ -1,0 +1,11 @@
+Model Information:
+* title:	package
+* source:	https://sketchfab.com/3d-models/package-982e7cbd341c450a8b7c5795381c3441
+* author:	dengyi05 (https://sketchfab.com/dengyi05)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "package" (https://sketchfab.com/3d-models/package-982e7cbd341c450a8b7c5795381c3441) by dengyi05 (https://sketchfab.com/dengyi05) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
