@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fishbones Rigged
+* source:	https://sketchfab.com/3d-models/fishbones-rigged-81247232321c4203a3b3ea85a71d2311
+* author:	NTSC (https://sketchfab.com/NTSC)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fishbones Rigged" (https://sketchfab.com/3d-models/fishbones-rigged-81247232321c4203a3b3ea85a71d2311) by NTSC (https://sketchfab.com/NTSC) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
