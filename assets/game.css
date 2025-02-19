@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ui{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    height: 100px;
+    width: 190px;
+    padding: 10px 10px;
+    background: rgba(70, 70, 70, 0.25);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.timer{
+    margin-top: 2px;
+    margin-left: 20px;
+    font-family: Prompt;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.score{
+    margin-top: 2px;
+    margin-left: 20px;
+    font-family: Prompt;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 400px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(70, 70, 70, 0.25);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.controls button {
+    height: 100px;
+    margin-top: 4px;
+    padding: 10px;
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.controls button::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    z-index: -1;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.controls button:hover::before {
+    width: 70px;
+    height: 70px;
+}
+

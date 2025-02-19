@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoalGreen</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/styles3.css">
+</head>
+<body>
+
+<header class="header">
+    <a class="logo" style="color: white">GoalGreen</a>
+    <nav class="navbar">
+        <a href="./index.html" id="home">Home</a>
+        <a href="./page2.html" id="minigames">Minigames</a>
+        <a href="./page3.html" id="aboutUs">About Us</a>
+    </nav>
+
+    <div class="language-dropdown">
+        <button class="langbutton" onclick="toggleDropdown()">
+            <img src="./assets/lang-uyIGl6DM.png" alt="Change Language" style="width:50px; height:auto;">
+        </button>
+        <div id="language-menu" class="language-menu">
+            <a href="#" onclick="setLanguage('en')">English</a>
+            <a href="#" onclick="setLanguage('th')">ไทย</a>
+        </div>
+    </div>
+</header>
+
+<div class="video-section">
+    <video autoplay muted loop>
+        <source src="./assets/videoplayback.mp4" type="video/mp4">
+    </video>
+    <div>
+        <h1></h1>
+        <p></p>
+    </div>
+</div>
+
+<div id="about" class="about-section fade-in">
+    <h1 id="text3_1" style="color: white">About Us</h1>
+    <div class="about-text">
+        <br>
+        <p id="text3_2">We are a team dedicated to raising awareness and understanding of proper waste separation through innovative and engaging educational tools. We believe that effective waste management starts with accurate knowledge. Therefore, we have created a website and mini-games to help users of all ages learn how to separate waste efficiently while enjoying the process.</p>
+    </div>
+</div>
+
+<div id="team" class="team">
+    <div class="team-member">
+        <img src="./assets/Chatchapol.jpg" alt="Team Member 1">
+        <h3 id="name1">Chatchapol Singhachan</h3>
+        <p id="name1_2">Lead Developer</p>
+    </div>
+    <div class="team-member">
+        <img src="./assets/Benjamin.jpg" alt="Team Member 2">
+        <h3 id="name2">Benjamin Chukwuka Tagbo</h3>
+        <p id="name2_2">Developer</p>
+    </div>
+    <div class="team-member">
+        <img src="./assets/Suttawee.jpg" alt="Team Member 3">
+        <h3 id="name3">Suttawee Noikorn</h3>
+        <p id="name3_2">Document Manager</p>
+    </div>
+</div>
+
+<div class="testimonials-section">
+    <div class="testimonial">
+        <p id="text3_3">“There is no such thing as ‘away’. When we throw anything away, it must go somewhere.”</p>
+        <h3 id="text3_4">- Annie Leonard, Author of The Story of Stuff</h3>
+    </div>
+</div>
+
+<script>
+    const teamMembers = document.querySelectorAll('.team-member');
+    window.addEventListener('scroll', function() {
+        const triggerBottom = window.innerHeight / 5 * 4;
+        teamMembers.forEach(member => {
+            const boxTop = member.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                member.classList.add('visible');
+            }
+        });
+    });
+</script>
+
+<script src="./assets/dropdown3.js"></script>
+</body>
+</html>

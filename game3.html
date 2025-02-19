@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trash Collector Road Conqueror</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      overflow: hidden;
+      }
+      canvas {
+      display: block;
+      }
+      #score {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    #ui {
+      margin: 0;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      z-index: 100;
+    }
+
+    h1 {
+      color: whitesmoke;
+      font-size: calc(20px + 2vw);
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+    }
+
+    #game-over {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3rem;
+      font-family: 'Arial', sans-serif;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 40px;
+      border-radius: 10px;
+      text-align: center;
+      z-index: 1000;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Arial', 'Helvetica', sans-serif;
+    }
+
+    @media (max-width: 600px) {
+      #ui {
+        padding: 5px;
+      }
+
+      h1 {
+        font-size: calc(16px + 2vw);
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/index-Dh0Yk_Lg.js"></script>
+</head>
+<body>
+  <div id="score">Score: 0</div>
+
+</body>
+</html>

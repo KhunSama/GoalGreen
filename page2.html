@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoalGreen</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/styles2.css">
+</head>
+<body>
+    <header class="header">
+            <a class="logo">GoalGreen</a>
+        <nav class="navbar">
+            <a href="./index.html" id="home">Home</a>
+            <a href="./page2.html" id="minigames">Minigames</a>
+            <a href="./page3.html" id="aboutUs">About us</a>
+        </nav>
+
+        <div class="language-dropdown">
+            <button class="langbutton" onclick="toggleDropdown()">
+                <img src="./assets/lang-uyIGl6DM.png" alt="Change Language" style="width:50px; height:auto;">
+            </button>
+            <div id="language-menu" class="language-menu">
+                <a href="#" onclick="setLanguage('en')">English</a>
+                <a href="#" onclick="setLanguage('th')">ไทย</a>
+            </div>
+        </div>
+    </header>
+    
+    <header>
+    </header>
+
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background-color: #008747">
+                        <div class="content">
+                            <h2 style="color:white" id="name1">Minigames</h2>
+                            <p class="price" style="color:white" id="text1">Recycling Drop</p>
+                            <p class="description" style="color:white" id="desc1_1">
+                                How to Play : The player controls a trash bin and collects recyclable trash
+                            </p>
+                            <p class="description" style="color:white" id="desc1_2">
+                                Controls : Arrow keys ⬅ ⮕ ⬆ ⬇
+                            </p>
+                            <p class="description" style="color:white" id="desc1_3">
+                                Game Components : Banana, box, plastic bottle, fishbone.
+                            </p>
+                            <p class="description" style="color:white" id="desc1_4">
+                                Rules : There is a time limit of 1 minute, and points will be counted. Each recyclable item placed in the bin earns 1 point.
+                            </p>
+                            <button onclick="window.location.href='./game1.html'" class="addToCard" id="play1">
+                                Play
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/Game1.png" style="margin-bottom: 300px;">
+                        <figcaption style="color:#005B23" id="game1"></figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background-color: #008747">
+                        <div class="content">
+                            <h2 style="color:white" id="name2">Minigames</h2>
+                            <p class="price" style="color:white" id="text2">Game #2</p>
+                            <p class="description" style="color:white" id="desc2_1">
+                                How to Play : The player controls a trash bin and collects recyclable trash
+                            </p>
+                            <p class="description" style="color:white" id="desc2_2">
+                                Controls : Arrow keys ⬅ ⮕ ⬆ ⬇
+                            </p>
+                            <p class="description" style="color:white" id="desc2_3">
+                                Game Components : Banana, box, plastic bottle, fishbone.
+                            </p>
+                            <p class="description" style="color:white" id="desc2_4">
+                                Rules : There is a time limit of 1 minute, and points will be counted. Each recyclable item placed in the bin earns 1 point.
+                            </p>
+                            <button onclick="window.location.href='./game2.html'" class="addToCard" id="play2">
+                                Play
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/Game2.png">
+                        <figcaption style="color:#005B23" id="game2"></figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background-color: #008747;">
+                        <div class="content">
+                            <h2 style="color:white" id="name3">Minigames</h2>
+                            <p class="price" style="color:white" id="text3">Game #3</p>
+                            <p class="description" style="color:white" id="desc3_1">
+                                How to Play : The player controls a trash bin and collects recyclable trash
+                            </p>
+                            <p class="description" style="color:white" id="desc3_2">
+                                Controls : Arrow keys ⬅ ⮕ ⬆ ⬇
+                            </p>
+                            <p class="description" style="color:white" id="desc3_3">
+                                Game Components : Banana, box, plastic bottle, fishbone.
+                            </p>
+                            <p class="description" style="color:white" id="desc3_4">
+                                Rules : There is a time limit of 1 minute, and points will be counted. Each recyclable item placed in the bin earns 1 point.
+                            </p>
+                            <button onclick="window.location.href='./game3.html'" class="addToCard" id="play3">
+                                Play
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./assets/Game3.png" style="margin-top: 150px;">
+                        <figcaption style="color:#005B23" id="game3"></figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/game1.js"></script>
+    <script src="./assets/dropdown2.js"></script>
+</body>
+</html>
