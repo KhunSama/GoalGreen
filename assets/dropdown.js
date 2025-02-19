@@ -53,9 +53,9 @@ const translations = {
 
 function setLanguage(lang) {
   document.querySelector('.centered-container p').innerText = translations[lang].welcomeMessage;
-  document.querySelector('.navbar a[href="index.html"]').innerText = translations[lang].home;
-  document.querySelector('.navbar a[href="page2.html"]').innerText = translations[lang].minigames;
-  document.querySelector('.navbar a[href="page3.html"]:last-of-type').innerText = translations[lang].aboutUs;
+  document.querySelector('.navbar a[href="./index.html"]').innerText = translations[lang].home;
+  document.querySelector('.navbar a[href="./page2.html"]').innerText = translations[lang].minigames;
+  document.querySelector('.navbar a[href="./page3.html"]:last-of-type').innerText = translations[lang].aboutUs;
   document.querySelector('#text1').textContent = translations[lang].text1;
   document.querySelector('#text2').textContent = translations[lang].text2;
   document.querySelector('#text3').textContent = translations[lang].text3;
